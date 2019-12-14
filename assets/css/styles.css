@@ -34,7 +34,8 @@ button {
 footer {
     background: yellowgreen;
     margin-top: auto;
-    padding: 20px;
+    min-height: 20px;
+    padding: 10px;
 }
 
 /** Images **/
