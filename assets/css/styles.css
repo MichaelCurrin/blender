@@ -9,12 +9,12 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 header {
     background: lightcyan;
     padding-left: 20px;
-
 }
 
 section {
