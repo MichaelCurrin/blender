@@ -5,18 +5,18 @@ const COLORS = {
 	green: [ 'avocado', 'cucumber', 'kiwi', 'lime', 'pea', 'spinach', 'pear', 'broccoli', 'brussels sprouts' ],
 	blue: [ 'blueberry', 'berry' ],
 	purple: [ 'olive', 'beetroot' ],
-	pink: [ 'peach', 'watermelon', 'grapefruit', 'guava' ]
+	pink: [ 'peach', 'watermelon', 'grapefood', 'guava' ]
 };
 
-let fruitLookup = {};
-for (const [ name, fruitsList ] of Object.entries(COLORS)) {
-	for (const fruit of fruitsList) {
-		fruitLookup[fruit] = name;
+let foodLookup = {};
+for (const [ name, foodsList ] of Object.entries(COLORS)) {
+	for (const food of foodsList) {
+		foodLookup[food] = name;
 	}
 }
 
-function colorOf(fruit) {
-	let color = fruitLookup[fruit.toLowerCase()];
+function colorOf(food) {
+	let color = foodLookup[food.toLowerCase()];
 	if (typeof color == 'undefined') {
 		return null;
 	}
@@ -24,8 +24,8 @@ function colorOf(fruit) {
 }
 
 function getInputColor(elId) {
-	let fruitInputValue = document.getElementById(elId).value;
-	let color = colorOf(fruitInputValue);
+	let foodInputValue = document.getElementById(elId).value;
+	let color = colorOf(foodInputValue);
 
 	return color;
 }
@@ -42,11 +42,11 @@ function updateSplat(elId, colorValue) {
 function blend() {
 	let pairs = [
 		{
-			input: 'fruitInput1',
+			input: 'foodInput1',
 			splat: 'splat1'
 		},
 		{
-			input: 'fruitInput2',
+			input: 'foodInput2',
 			splat: 'splat2'
 		}
 	];
@@ -60,9 +60,9 @@ function blend() {
 
 function listenForEnterButton(elIds) {
 	for (const elId of elIds) {
-		var fruitInput = document.getElementById(elId);
+		var foodInput = document.getElementById(elId);
 
-		fruitInput.addEventListener('keyup', function(event) {
+		foodInput.addEventListener('keyup', function(event) {
 			if (event.keyCode === 13) {
 				event.preventDefault();
 				document.getElementsByTagName('button')[0].click();
