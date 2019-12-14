@@ -8,6 +8,37 @@
     <title>Fruit Blender</title>
 
     <style>
+        /** Align footer to the botoom and add space on page edges. **/
+        /* https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        header {
+            background: lightcyan;
+            padding-left: 20px;
+
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background: PapayaWhip;
+            margin-top: auto;
+            padding-left: 20px;
+        }
+
+        /** Images **/
         .splat {
             height: 100px;
             display: none;
@@ -19,20 +50,36 @@
 </head>
 
 <body>
-    <h1>Fruit Blender</h1>
-    <div>
-        <span>Fruit:</span>
-        <input id="fruitInput" type="text">
-        <br>
-        <br>
-        <button onclick="blend()">Blend!</button>
-        <br>
-    </div>
-    <div>
-        <div id="result">
-            <object class="splat" data="assets/img/42890.svg" type="image/svg+xml">
+    <header>
+        <h1>Fruit Blender</h1>
+    </header>
+
+    <section>
+
+        <div>
+            <span>Fruit:</span>
+            <input id="fruitInput" type="text">
+            <br>
+            <br>
+            <button onclick="blend()">Blend!</button>
+            <br>
         </div>
-    </div>
+        <div>
+            <div id="result">
+                <object class="splat" data="assets/img/42890.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Credits</h2>
+        <ul>
+            <li>
+                <a href="https://svgsilh.com/image/42890.html">SVG > element splat wet stain</a>
+            </li>
+        </ul>
+
+    </footer>
 </body>
 
 </html>
