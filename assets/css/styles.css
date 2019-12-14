@@ -43,10 +43,6 @@ footer {
     margin-left: -100px;
 }
 
-.hidden {
-    display: none;
-}
-
 .under {
     position: absolute;
     z-index: -1;
@@ -55,6 +51,7 @@ footer {
 .over {
     position: absolute;
     z-index: 1;
+    /* Mix the colors. Note in Safari that luminosity value keep the element greyscale unfortunately. */
     mix-blend-mode: luminosity;
 }
 

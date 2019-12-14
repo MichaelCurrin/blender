@@ -1,3 +1,14 @@
+const EL_IDS = [
+	{
+		input: 'foodInput1',
+		splat: 'splat1'
+	},
+	{
+		input: 'foodInput2',
+		splat: 'splat2'
+	}
+];
+
 // Keys are all valid CSS colors.
 const COLORS = {
 	brown: [ 'cherry' ],
@@ -24,6 +35,7 @@ const COLORS = {
 	whitesmoke: [ 'cauliflower', 'potato' ],
 	black: [ 'blackberry' ]
 };
+const DEFAULT_COLOR = 'rgba(0, 0, 0, 0.0)';
 
 let foodLookup = {};
 for (const [ name, foodsList ] of Object.entries(COLORS)) {
@@ -37,7 +49,7 @@ const FOOD_NAMES = Object.keys(foodLookup).sort();
 function colorOf(food) {
 	let color = foodLookup[food.toLowerCase()];
 	if (typeof color == 'undefined') {
-		return null;
+		return DEFAULT_COLOR;
 	}
 	return color;
 }
@@ -49,53 +61,33 @@ function getInputColor(elId) {
 	return color;
 }
 
-/** Set color and show splat, or hide for no color. */
+/** Set splat's color using user input otherwise make it hidden. */
 function updateSplat(elId, colorValue) {
 	let splat = document.getElementById(elId);
 
-	if (colorValue) {
-		splat.getSVGDocument().getElementsByTagName('g')[0].setAttribute('fill', colorValue);
-
-		if (splat.classList.contains('hidden')) {
-			splat.classList.remove('hidden');
-		}
-	} else {
-		if (!splat.classList.contains('hidden')) {
-			splat.classList.add('hidden');
-		}
-	}
+	svg = splat.getSVGDocument();
+	svg.getElementsByTagName('g')[0].setAttribute('fill', colorValue);
 }
 
 function blend() {
-	let pairs = [
-		{
-			input: 'foodInput1',
-			splat: 'splat1'
-		},
-		{
-			input: 'foodInput2',
-			splat: 'splat2'
-		}
-	];
-	for (pair of pairs) {
+	for (const pair of EL_IDS) {
 		let colorValue = getInputColor(pair.input);
 		updateSplat(pair.splat, colorValue);
 	}
 }
 
-function setup(elIds) {
-	for (const elId of elIds) {
-		let selector = document.getElementById(elId);
-
+function initialize() {
+	for (const pair of EL_IDS) {
+		let dropList = document.getElementById(pair.input);
 		for (name of FOOD_NAMES) {
-			let opt = document.createElement('option');
-			opt.setAttribute('value', name);
-			opt.text = name;
-			selector.appendChild(opt);
+			let option = document.createElement('option');
+			option.setAttribute('value', name);
+			option.text = name;
+			dropList.appendChild(option);
 		}
+
+		updateSplat(pair.splat, DEFAULT_COLOR);
 	}
 }
 
-window.onload = function() {
-	setup([ 'foodInput1', 'foodInput2' ]);
-};
+window.onload = initialize;
