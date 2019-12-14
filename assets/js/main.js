@@ -97,6 +97,9 @@ function protein() {
 }
 
 function initialize() {
+	let critterSvg = document.getElementById('critterSvg');
+	critterSvg.setAttribute('data', EMPTY_SVG_PATH);
+
 	for (const pair of EL_IDS) {
 		let dropList = document.getElementById(pair.input);
 		for (name of FOOD_NAMES) {

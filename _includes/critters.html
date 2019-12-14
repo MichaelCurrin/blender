@@ -6,4 +6,7 @@
         {% endif -%}
     {% endfor %}
     ];
+
+    // SVG with no data affects the spacing of the page so use an empty SVG.
+    const EMPTY_SVG_PATH = "{{ '/assets/img/empty.svg' | relative_url }}"
 </script>
