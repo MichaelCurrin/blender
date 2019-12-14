@@ -1,20 +1,28 @@
 // Keys are all valid CSS colors.
 const COLORS = {
 	brown: [ 'cherry' ],
-	crimson: [ 'apple', 'cranberry', 'strawberry', 'raspberry', 'pomegranate' ],
+	crimson: [ 'apple', 'cranberry', 'strawberry', 'raspberry', 'pomegranate', 'red pepper' ],
+
 	darkorange: [ 'orange', 'carrot' ],
 	orange: [ 'pawpaw', 'apricot', 'squash', 'butternut', 'pumpkin' ],
-	lightgreen: [ 'grape' ],
-	gold: [ 'lemon', 'mango', 'pineapple', 'papaya', 'banana', 'sweetcorn' ],
-	green: [ 'avocado', 'cucumber', 'pea', 'spinach', 'broccoli', 'brussels sprouts', 'lettuce', 'pepper' ],
+
+	lightgreen: [ 'green grape' ],
+	darkgreen: [ 'spinach', 'cucumber' ],
+	green: [ 'avocado', 'asparagus', 'pea', 'broccoli', 'brussels sprouts', 'lettuce', 'green pepper' ],
+
 	yellowgreen: [ 'kiwi', 'lime', 'pear' ],
-	black: [ 'blackberry' ],
+
+	gold: [ 'lemon', 'mango', 'pineapple', 'papaya', 'banana', 'sweetcorn', 'yellow pepper' ],
+	papayawhip: [ 'papaya' ],
+
 	darkblue: [ 'blueberry' ],
+
 	purple: [ 'olive', 'beetroot' ],
 	pink: [ 'peach', 'watermelon', 'grapefruit', 'guava' ],
-	blueviolet: [ 'aubergine', 'eggplant' ],
+	blueviolet: [ 'aubergine / eggplant' ],
+
 	whitesmoke: [ 'cauliflower', 'potato' ],
-	papayawhip: [ 'papaya' ]
+	black: [ 'blackberry' ]
 };
 
 let foodLookup = {};
