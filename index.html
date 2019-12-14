@@ -12,16 +12,20 @@
     <script src="assets/js/main.js"></script>
 </head>
 
-<body>
+<body onload="listenForEnterButton(['fruitInput1', 'fruitInput2'])">
     <header>
-        <h1>Fruit Blender</h1>
+        <h1>Food Blender</h1>
     </header>
 
     <section>
 
         <div>
-            <span>Fruit:</span>
-            <input id="fruitInput" type="text">
+            <span>First:</span>
+            <input id="fruitInput1" type="text">
+            <br>
+            <br>
+            <span>Second:</span>
+            <input id="fruitInput2" type="text">
             <br>
             <br>
             <button onclick="blend()">Blend!</button>
@@ -29,7 +33,11 @@
         </div>
         <div>
             <div id="result">
-                <object class="splat hidden" data="assets/img/42890.svg" type="image/svg+xml"></object>
+                <object id="splat1" class="splat under hidden" data="assets/img/42890.svg"
+                    type="image/svg+xml"></object>
+
+                <object id="splat2" class="splat over hidden" data="assets/img/297562.svg"
+                    type="image/svg+xml"></object>
             </div>
         </div>
     </section>

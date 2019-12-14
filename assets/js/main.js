@@ -23,30 +23,50 @@ function colorOf(fruit) {
 	return color;
 }
 
-function blend() {
-	let fruitInputValue = document.getElementById('fruitInput').value;
+function getInputColor(elId) {
+	let fruitInputValue = document.getElementById(elId).value;
 	let color = colorOf(fruitInputValue);
-	if (!color) {
-		window.alert('Not a valid color!');
-		return;
-	}
-	let splat = document.getElementsByClassName('splat')[0];
-	splat.getSVGDocument().getElementsByTagName('g')[0].setAttribute('fill', color);
+
+	return color;
+}
+
+function updateSplat(elId, colorValue) {
+	let splat = document.getElementById(elId);
+	splat.getSVGDocument().getElementsByTagName('g')[0].setAttribute('fill', colorValue);
 
 	if (splat.classList.contains('hidden')) {
 		splat.classList.remove('hidden');
 	}
 }
 
-function listenForEnterButton() {
-	var fruitInput = document.getElementById('fruitInput');
-
-	fruitInput.addEventListener('keyup', function(event) {
-		if (event.keyCode === 13) {
-			event.preventDefault();
-			document.getElementsByTagName('button')[0].click();
+function blend() {
+	let pairs = [
+		{
+			input: 'fruitInput1',
+			splat: 'splat1'
+		},
+		{
+			input: 'fruitInput2',
+			splat: 'splat2'
 		}
-	});
+	];
+	for (pair of pairs) {
+		let colorValue = getInputColor(pair.input);
+		if (colorValue) {
+			updateSplat(pair.splat, colorValue);
+		}
+	}
 }
 
-window.onload = listenForEnterButton;
+function listenForEnterButton(elIds) {
+	for (const elId of elIds) {
+		var fruitInput = document.getElementById(elId);
+
+		fruitInput.addEventListener('keyup', function(event) {
+			if (event.keyCode === 13) {
+				event.preventDefault();
+				document.getElementsByTagName('button')[0].click();
+			}
+		});
+	}
+}

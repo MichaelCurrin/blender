@@ -21,6 +21,11 @@ section {
     padding: 20px;
 }
 
+#result {
+    margin: 0 auto;
+    position: relative;
+}
+
 footer {
     background: PapayaWhip;
     margin-top: auto;
@@ -32,6 +37,15 @@ footer {
     height: 200px;
 }
 
-.hidden {
-    display: none;
+
+
+.under {
+    position: absolute;
+    z-index: -1;
+}
+
+.over {
+    position: absolute;
+    z-index: 1;
+    mix-blend-mode: luminosity;
 }
