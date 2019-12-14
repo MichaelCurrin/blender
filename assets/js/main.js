@@ -24,12 +24,25 @@ function colorOf(fruit) {
 }
 
 function blend() {
-	let fruitInput = document.getElementById('fruitInput').value;
-	let color = colorOf(fruitInput);
+	let fruitInputValue = document.getElementById('fruitInput').value;
+	let color = colorOf(fruitInputValue);
 	if (!color) {
-		window.alert(`Not a valid color!\n${fruitInput}`);
+		window.alert('Not a valid color!');
 	}
 	let splat = document.getElementsByClassName('splat')[0];
 	splat.style.display = 'block';
 	splat.getSVGDocument().getElementsByTagName('g')[0].setAttribute('fill', color);
 }
+
+function listenForEnterButton() {
+	var fruitInput = document.getElementById('fruitInput');
+
+	fruitInput.addEventListener('keyup', function(event) {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+			document.getElementsByTagName('button')[0].click();
+		}
+	});
+}
+
+window.onload = listenForEnterButton;
