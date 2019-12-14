@@ -69,11 +69,15 @@ function updateSplat(elId, colorValue) {
 	svg.getElementsByTagName('g')[0].setAttribute('fill', colorValue);
 }
 
+/* Color one or both splats and clear any critter. */
 function blend() {
 	for (const pair of EL_IDS) {
 		let colorValue = getInputColor(pair.input);
 		updateSplat(pair.splat, colorValue);
 	}
+
+	let critterSvg = document.getElementById('critterSvg');
+	critterSvg.setAttribute('data', '');
 }
 
 function randomChoice(items) {
