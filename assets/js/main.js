@@ -30,12 +30,20 @@ function getInputColor(elId) {
 	return color;
 }
 
+/** Set color and show splat, or hide for no color. */
 function updateSplat(elId, colorValue) {
 	let splat = document.getElementById(elId);
-	splat.getSVGDocument().getElementsByTagName('g')[0].setAttribute('fill', colorValue);
 
-	if (splat.classList.contains('hidden')) {
-		splat.classList.remove('hidden');
+	if (colorValue) {
+		splat.getSVGDocument().getElementsByTagName('g')[0].setAttribute('fill', colorValue);
+
+		if (splat.classList.contains('hidden')) {
+			splat.classList.remove('hidden');
+		}
+	} else {
+		if (!splat.classList.contains('hidden')) {
+			splat.classList.add('hidden');
+		}
 	}
 }
 
@@ -52,9 +60,7 @@ function blend() {
 	];
 	for (pair of pairs) {
 		let colorValue = getInputColor(pair.input);
-		if (colorValue) {
-			updateSplat(pair.splat, colorValue);
-		}
+		updateSplat(pair.splat, colorValue);
 	}
 }
 
