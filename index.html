@@ -14,7 +14,7 @@
     <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
 </head>
 
-<body onload="listenForEnterButton(['foodInput1', 'foodInput2'])">
+<body>
     <header>
         <h1>{{ site.title }}</h1>
 
@@ -25,14 +25,19 @@
 
         <h2>Ingredients</h2>
         <div>
-            <span>First:</span>
-            <input id="foodInput1" type="text">
+            <span>
+                <select id=foodInput1>
+                    <option value="">--</option>
+                </select>
+
+                <select id=foodInput2>
+                    <option value="">--</option>
+                </select>
+            </span>
+
             <br>
             <br>
-            <span>Second:</span>
-            <input id="foodInput2" type="text">
-            <br>
-            <br>
+
             <button onclick="blend()">Blend!</button>
             <br>
             <br>

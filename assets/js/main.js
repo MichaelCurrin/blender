@@ -32,6 +32,8 @@ for (const [ name, foodsList ] of Object.entries(COLORS)) {
 	}
 }
 
+const FOOD_NAMES = Object.keys(foodLookup).sort();
+
 function colorOf(food) {
 	let color = foodLookup[food.toLowerCase()];
 	if (typeof color == 'undefined') {
@@ -81,15 +83,19 @@ function blend() {
 	}
 }
 
-function listenForEnterButton(elIds) {
+function setup(elIds) {
 	for (const elId of elIds) {
-		var foodInput = document.getElementById(elId);
+		let selector = document.getElementById(elId);
 
-		foodInput.addEventListener('keyup', function(event) {
-			if (event.keyCode === 13) {
-				event.preventDefault();
-				document.getElementsByTagName('button')[0].click();
-			}
-		});
+		for (name of FOOD_NAMES) {
+			let opt = document.createElement('option');
+			opt.setAttribute('value', name);
+			opt.text = name;
+			selector.appendChild(opt);
+		}
 	}
 }
+
+window.onload = function() {
+	setup([ 'foodInput1', 'foodInput2' ]);
+};
