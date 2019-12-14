@@ -28,6 +28,7 @@ function blend() {
 	let color = colorOf(fruitInputValue);
 	if (!color) {
 		window.alert('Not a valid color!');
+		return;
 	}
 	let splat = document.getElementsByClassName('splat')[0];
 	splat.style.display = 'block';
