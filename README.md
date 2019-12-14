@@ -16,6 +16,11 @@ Install [Jekyll](jekyllrb.com/)
 $ jekyll serve
 ```
 
+Open in the browser:
+
+- http://127.0.0.1:4000/food-blender-site/
+
+
 ### Github Pages
 
 Edit the repo's settings and setup Github Pages section using `master` branch.

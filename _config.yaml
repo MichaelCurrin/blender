@@ -1,5 +1,7 @@
 title: Food Blender
 description: Blend fruit and veg and see what colors they make.
+
+baseurl: /food-blender-site
 github_repo: MichaelCurrin/food-blender-site
 
 exclude:
