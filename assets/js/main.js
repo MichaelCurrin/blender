@@ -83,14 +83,13 @@ function randomChoice(items) {
 function protein() {
 	let url = randomChoice(CRITTER_URLS);
 
+	let critterSvg = document.getElementById('critterSvg');
 	let svgData = critterSvg.getAttribute('data');
-	if (svgData) {
-		critterSvg.setAttribute('data', '');
-	} else {
-		let critterSvg = document.getElementById('critterSvg');
-		// Unfortunately it cannot be set to different fill here as it takes too long for the SVG to load once data is set.
-		critterSvg.setAttribute('data', url);
-	}
+
+	// Unfortunately it cannot be set to different fill here as it takes too long for the SVG to
+	// load once data is set. So keep it black.
+	let newData = svgData ? '' : url;
+	critterSvg.setAttribute('data', newData);
 }
 
 function initialize() {
