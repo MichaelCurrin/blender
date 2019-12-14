@@ -1,18 +1,20 @@
 // Keys are all valid CSS colors.
 const COLORS = {
 	brown: [ 'cherry' ],
-	crimson: [ 'apple', 'cranberry', 'strawberry' ],
-	orange: [ 'carrot', 'apricot', 'squash', 'butternut', 'pumpkin' ],
+	crimson: [ 'apple', 'cranberry', 'strawberry', 'raspberry', 'pomegranate' ],
+	darkorange: [ 'orange', 'carrot' ],
+	orange: [ 'pawpaw', 'apricot', 'squash', 'butternut', 'pumpkin' ],
 	lightgreen: [ 'grape' ],
-	darkorange: [ 'orange' ],
 	gold: [ 'lemon', 'mango', 'pineapple', 'papaya', 'banana', 'sweetcorn' ],
-	green: [ 'avocado', 'cucumber', 'pea', 'spinach', 'broccoli', 'brussels sprouts' ],
+	green: [ 'avocado', 'cucumber', 'pea', 'spinach', 'broccoli', 'brussels sprouts', 'lettuce', 'pepper' ],
 	yellowgreen: [ 'kiwi', 'lime', 'pear' ],
-	darkblue: [ 'blueberry', 'blackberry' ],
+	black: [ 'blackberry' ],
+	darkblue: [ 'blueberry' ],
 	purple: [ 'olive', 'beetroot' ],
 	pink: [ 'peach', 'watermelon', 'grapefruit', 'guava' ],
 	blueviolet: [ 'aubergine', 'eggplant' ],
-	whitesmoke: [ 'cauliflower' ]
+	whitesmoke: [ 'cauliflower', 'potato' ],
+	papayawhip: [ 'papaya' ]
 };
 
 let foodLookup = {};
