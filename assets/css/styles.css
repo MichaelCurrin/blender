@@ -1,5 +1,6 @@
-/** Align footer to the botoom and add space on page edges. **/
-/* https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+/* Align footer to the bottom and add spacing on page edges. */
+/* Based on: https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+
 html,
 body {
     height: 100%;
@@ -15,10 +16,7 @@ body {
 
 header {
     background: lightcyan;
-}
-
-section {
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #result {
@@ -32,9 +30,14 @@ footer {
 }
 
 /** Images **/
+
 .splat {
     height: 200px;
     margin-left: -100px;
+}
+
+.hidden {
+    display: none;
 }
 
 .under {
@@ -46,4 +49,25 @@ footer {
     position: absolute;
     z-index: 1;
     mix-blend-mode: luminosity;
+}
+
+/** Github icon styling - from Docsify CSS. **/
+
+.github-corner {
+    border-bottom: 0;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    z-index: 1;
+}
+
+.github-corner:hover .octo-arm {
+    animation: a .56s ease-in-out;
+}
+
+.github-corner svg {
+    color: #fff;
+    height: 100px;
+    width: 100px;
 }
