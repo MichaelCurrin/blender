@@ -1,0 +1,7 @@
+title: Food Blender
+description: Blend fruit and veg and see what colors they make.
+github_repo: MichaelCurrin/food-blender-site
+
+exclude:
+  - LICENSE
+  - README.md
