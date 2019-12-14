@@ -77,7 +77,7 @@ function blend() {
 	}
 
 	let critterSvg = document.getElementById('critterSvg');
-	critterSvg.setAttribute('data', '');
+	critterSvg.setAttribute('data', EMPTY_SVG_PATH);
 }
 
 function randomChoice(items) {
@@ -92,7 +92,7 @@ function protein() {
 
 	// Unfortunately it cannot be set to different fill here as it takes too long for the SVG to
 	// load once data is set. So keep it black.
-	let newData = svgData ? '' : url;
+	let newData = svgData === EMPTY_SVG_PATH ? url : EMPTY_SVG_PATH;
 	critterSvg.setAttribute('data', newData);
 }
 

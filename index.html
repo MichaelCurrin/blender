@@ -19,8 +19,6 @@
 <body>
     <header>
         <h1>{{ site.title }}</h1>
-
-        {% include github.html %}
     </header>
 
     <section>
@@ -60,7 +58,8 @@
     </section>
 
     <footer>
-        <p>Images from <a href="https://svgsilh.com">svgsilh.com</p>
+        <!-- Developer note: The banner was added on the site but it causes issues when the SVGs change. -->
+        <a href="https://github.com/{{ site.github_repo }}">Github repo</a>
     </footer>
 </body>
 
