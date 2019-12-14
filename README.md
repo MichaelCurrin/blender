@@ -24,3 +24,18 @@ Open in the browser:
 ### Github Pages
 
 Edit the repo's settings and setup Github Pages section using `master` branch.
+
+
+## Credits
+
+Critter images are from [svgsilh.com](https://svgsilh.com) and used freely under Creative Commons license.
+
+- https://svgsilh.com/image/42890.html
+- https://svgsilh.com/image/297562.html
+- https://svgsilh.com/image/31674.html
+- https://svgsilh.com/image/34372.html
+- https://svgsilh.com/image/148773.html
+- https://svgsilh.com/image/160380.html
+- https://svgsilh.com/image/151393.html
+- https://svgsilh.com/image/954411.html
+- https://svgsilh.com/image/2029633.html
