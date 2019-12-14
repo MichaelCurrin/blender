@@ -31,8 +31,11 @@ function blend() {
 		return;
 	}
 	let splat = document.getElementsByClassName('splat')[0];
-	splat.style.display = 'block';
 	splat.getSVGDocument().getElementsByTagName('g')[0].setAttribute('fill', color);
+
+	if (splat.classList.contains('hidden')) {
+		splat.classList.remove('hidden');
+	}
 }
 
 function listenForEnterButton() {

@@ -30,5 +30,8 @@ footer {
 /** Images **/
 .splat {
     height: 100px;
+}
+
+.hidden {
     display: none;
 }
