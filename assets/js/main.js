@@ -76,6 +76,23 @@ function blend() {
 	}
 }
 
+function randomChoice(items) {
+	return items[Math.floor(Math.random() * items.length)];
+}
+
+function protein() {
+	let url = randomChoice(CRITTER_URLS);
+
+	let svgData = critterSvg.getAttribute('data');
+	if (svgData) {
+		critterSvg.setAttribute('data', '');
+	} else {
+		let critterSvg = document.getElementById('critterSvg');
+		// Unfortunately it cannot be set to different fill here as it takes too long for the SVG to load once data is set.
+		critterSvg.setAttribute('data', url);
+	}
+}
+
 function initialize() {
 	for (const pair of EL_IDS) {
 		let dropList = document.getElementById(pair.input);

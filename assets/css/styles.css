@@ -55,6 +55,15 @@ footer {
     mix-blend-mode: luminosity;
 }
 
+#critterSvg {
+    position: absolute;
+    height: 80px;
+    top: 60px;
+    margin-left: -40px;
+    z-index: 2;
+}
+
+
 /** Github icon styling - from Docsify CSS. **/
 
 .github-corner {

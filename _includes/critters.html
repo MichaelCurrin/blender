@@ -1,0 +1,9 @@
+<script>
+    const CRITTER_URLS = [
+    {%- for asset in site.static_files %}
+        {%- if asset.path contains 'critters' %}
+        "{{ asset.path | relative_url }}",
+        {% endif -%}
+    {% endfor %}
+    ];
+</script>

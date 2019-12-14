@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
 
     <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+
+    {% include critters.html %}
 </head>
 
 <body>
@@ -37,8 +39,8 @@
             <br>
             <br>
 
-            <button onclick="blend()">Blend!</button>
-
+            <button id='foodButton' onclick="blend()">Blend!</button>
+            <button id="critterButton" onclick="protein()">Protein!</button>
         </div>
 
         <br>
@@ -51,8 +53,10 @@
 
                 <object id="splat2" class="splat over" data="{{ 'assets/img/splat2.svg' | relative_url }}"
                     type="image/svg+xml"></object>
-            </div>
+
+                <object id="critterSvg" class="critter" data="" type="image/svg+xml"></object> </div>
         </div>
+
     </section>
 
     <footer>
