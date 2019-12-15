@@ -11,102 +11,35 @@ const EL_IDS = [
 
 // Keys are all valid CSS colors.
 const COLORS = {
-    brown: [
-        'cherry'
-    ],
-    crimson: [
-        'apple',
-        'cranberry',
-        'strawberry',
-        'raspberry',
-        'pomegranate'
-    ],
-    red: [
-        'red pepper'
-    ],
+    brown: [ 'cherry' ],
+    crimson: [ 'apple', 'cranberry', 'strawberry', 'raspberry', 'pomegranate' ],
+    red: [ 'red pepper' ],
 
-    orange: [
-        'pawpaw',
-        'apricot',
-        'squash',
-        'butternut',
-        'pumpkin'
-    ],
-    darkorange: [
-        'orange',
-        'carrot'
-    ],
+    orange: [ 'pawpaw', 'apricot', 'squash', 'butternut', 'pumpkin' ],
+    darkorange: [ 'orange', 'carrot' ],
 
-    lightgreen: [
-        'green grape'
-    ],
-    darkgreen: [
-        'spinach',
-        'cucumber'
-    ],
-    green: [
-        'avocado',
-        'asparagus',
-        'pea',
-        'broccoli',
-        'brussels sprouts',
-        'lettuce',
-        'green pepper'
-    ],
-    yellowgreen: [
-        'kiwi',
-        'lime',
-        'pear'
-    ],
+    lightgreen: [ 'green grape' ],
+    darkgreen: [ 'spinach', 'cucumber' ],
+    green: [ 'avocado', 'asparagus', 'pea', 'broccoli', 'brussels sprouts', 'lettuce', 'green pepper' ],
+    yellowgreen: [ 'kiwi', 'lime', 'pear' ],
 
-    gold: [
-        'lemon',
-        'mango',
-        'pineapple',
-        'papaya',
-        'banana',
-        'sweetcorn',
-        'yellow pepper'
-    ],
-    papayawhip: [
-        'papaya'
-    ],
+    gold: [ 'lemon', 'mango', 'pineapple', 'papaya', 'banana', 'sweetcorn', 'yellow pepper' ],
+    papayawhip: [ 'papaya' ],
 
-    darkblue: [
-        'blueberry'
-    ],
+    darkblue: [ 'blueberry' ],
 
-    blueviolet: [
-        'eggplant',
-        'granadilla'
-    ],
-    purple: [
-        'olive',
-        'beetroot'
-    ],
-    pink: [
-        'peach',
-        'watermelon',
-        'grapefruit',
-        'guava'
-    ],
+    blueviolet: [ 'eggplant', 'granadilla' ],
+    purple: [ 'olive', 'beetroot' ],
+    pink: [ 'peach', 'watermelon', 'grapefruit', 'guava' ],
 
-    whitesmoke: [
-        'cauliflower',
-        'potato'
-    ],
+    whitesmoke: [ 'cauliflower', 'potato' ],
 
-    black: [
-        'blackberry'
-    ]
+    black: [ 'blackberry' ]
 };
 const DEFAULT_COLOR = 'rgba(0, 0, 0, 0.0)';
 
 let foodLookup = {};
-for (const [
-    name,
-    foodsList
-] of Object.entries(COLORS)) {
+for (const [ name, foodsList ] of Object.entries(COLORS)) {
     for (const food of foodsList) {
         foodLookup[food] = name;
     }
