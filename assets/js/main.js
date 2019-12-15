@@ -12,15 +12,15 @@ const EL_IDS = [
 // Keys are all valid CSS colors.
 const COLORS = {
 	brown: [ 'cherry' ],
-	crimson: [ 'apple', 'cranberry', 'strawberry', 'raspberry', 'pomegranate', 'red pepper' ],
+	crimson: [ 'apple', 'cranberry', 'strawberry', 'raspberry', 'pomegranate' ],
+	red: [ 'red pepper' ],
 
-	darkorange: [ 'orange', 'carrot' ],
 	orange: [ 'pawpaw', 'apricot', 'squash', 'butternut', 'pumpkin' ],
+	darkorange: [ 'orange', 'carrot' ],
 
 	lightgreen: [ 'green grape' ],
 	darkgreen: [ 'spinach', 'cucumber' ],
 	green: [ 'avocado', 'asparagus', 'pea', 'broccoli', 'brussels sprouts', 'lettuce', 'green pepper' ],
-
 	yellowgreen: [ 'kiwi', 'lime', 'pear' ],
 
 	gold: [ 'lemon', 'mango', 'pineapple', 'papaya', 'banana', 'sweetcorn', 'yellow pepper' ],
@@ -28,11 +28,12 @@ const COLORS = {
 
 	darkblue: [ 'blueberry' ],
 
+	blueviolet: [ 'eggplant', 'granadilla' ],
 	purple: [ 'olive', 'beetroot' ],
 	pink: [ 'peach', 'watermelon', 'grapefruit', 'guava' ],
-	blueviolet: [ 'aubergine / eggplant' ],
 
 	whitesmoke: [ 'cauliflower', 'potato' ],
+
 	black: [ 'blackberry' ]
 };
 const DEFAULT_COLOR = 'rgba(0, 0, 0, 0.0)';
