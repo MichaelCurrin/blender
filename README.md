@@ -20,8 +20,10 @@ $ git clone github.com:MichaelCurrin/food-blender-site.git
 $ cd food-blender-site
 ```
 
+Start Jekyll server with livereload enabled.
+
 ```bash
-$ jekyll serve
+$ make serve
 ```
 
 Open in the browser:

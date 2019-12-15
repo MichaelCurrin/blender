@@ -7,3 +7,4 @@ github_repo: MichaelCurrin/food-blender-site
 exclude:
   - LICENSE
   - README.md
+  - Makefile
