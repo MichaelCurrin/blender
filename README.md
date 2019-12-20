@@ -1,5 +1,5 @@
 # Food Blender Site
-> Make splashes of colors by blending fruit and vegetables.
+> Interactive website for blending fruit and vegetables into a colorful mix
 
 - Simple, fun project.
 - Uses SVG images for splats and critters.
@@ -11,25 +11,18 @@
 
 ### Locally
 
-Install [Jekyll](jekyllrb.com/) globally.
-
-Clone repo.
-
-```bash
-$ git clone github.com:MichaelCurrin/food-blender-site.git
-$ cd food-blender-site
-```
-
-Start Jekyll server with livereload enabled.
-
-```bash
-$ make serve
-```
-
-Open in the browser:
-
-- http://127.0.0.1:4000/food-blender-site/
-
+1. Install [Jekyll](jekyllrb.com/) globally.
+2. Clone the repo.
+    ```bash
+    $ git clone github.com:MichaelCurrin/food-blender-site.git
+    $ cd food-blender-site
+    ```
+3. Start the Jekyll server (with livereload enabled).
+    ```bash
+    $ make serve
+    ```
+4. Open in the browser:
+    - http://127.0.0.1:4000/food-blender-site/
 
 ### Github Pages
 
@@ -42,6 +35,7 @@ Setup the Github Pages section using `master` branch.
 Click on the URL which pages under Github Pages section.
 
 e.g. https://michaelcurrin.github.io/food-blender-site/
+
 
 ## Development
 
