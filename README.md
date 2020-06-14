@@ -1,23 +1,39 @@
-# Food Blender Site
+# Food Blender Toy
 > Interactive website for blending fruit and vegetables into a colorful mix
 
-- Simple, fun project.
-- Uses SVG images for splats and critters.
-- Uses JavaScript for interactivity and CSS to blend the colors.
-- Static site built on Jekyll and hosted Github Pages.
+
+## Play online
+
+https://michaelcurrin.github.io/food-blender-site/
 
 
-## Setup and Run
+## Features
+
+- Simple, fun web-based toy which I made for a friend. It is not quiet a game as their no way to win.
+- SVG images for splats and critters.
+- JavaScript for interactivity
+- CSS to blend the colors (results vary based on browser).
+- Static site built on Jekyll and hosted on Github Pages.
+
+
+## Related projects
+
+If you like this project please checkout this AntiStress mobile app which I found much later but is similar - explore and play with objects on the screen and some interact.
+
+- https://www.jindoblu.com/antistress-relaxation-toys/
+
+
+## Setup and run
 
 ### Locally
 
-1. Install [Jekyll](jekyllrb.com/) globally.
+1. Install Ruby and [Jekyll](https://jekyllrb.com/).
 2. Clone the repo.
     ```bash
     $ git clone github.com:MichaelCurrin/food-blender-site.git
     $ cd food-blender-site
     ```
-3. Start the Jekyll server (with livereload enabled).
+3. Start the Jekyll server (with live-reload enabled).
     ```bash
     $ make serve
     ```
@@ -26,7 +42,7 @@
 
 ### Github Pages
 
-Fork the project if it not in Github repos.
+Fork the project.
 
 Go to the repo's settings.
 
@@ -34,12 +50,10 @@ Setup the Github Pages section using `master` branch.
 
 Click on the URL which pages under Github Pages section.
 
-e.g. https://michaelcurrin.github.io/food-blender-site/
-
 
 ## Development
 
-Place an SVG in the [assets/img/critters](/assets/img/critters) directory and the image will part of the random critter choice when clicking the _Protein_ button.
+Place an SVG in the [assets/img/critters](/assets/img/critters/) directory and the image will become part of the random critter choice when clicking the _Protein_ button.
 
 
 ## Credits
@@ -57,3 +71,8 @@ SVG images are sourced from [svgsilh.com](https://svgsilh.com) and used freely u
     - https://svgsilh.com/image/151393.html
     - https://svgsilh.com/image/954411.html
     - https://svgsilh.com/image/2029633.html
+
+
+## License
+
+Released under [MIT](/LICENSE).
