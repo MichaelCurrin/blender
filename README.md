@@ -1,5 +1,5 @@
-# Food Blender Toy
-> Interactive website for blending fruit and vegetables into a colorful mix
+# Food Blender
+> Choose fruit and vegetables and blend them into a colorful mix
 
 
 ## Play online
@@ -76,3 +76,5 @@ SVG images are sourced from [svgsilh.com](https://svgsilh.com) and used freely u
 ## License
 
 Released under [MIT](/LICENSE).
+
+Please link back to this repo if you use part of the content or idea here and you must include a copy of this license if you use a significant portion of code.
