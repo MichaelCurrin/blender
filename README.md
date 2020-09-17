@@ -2,9 +2,14 @@
 > Choose fruit and vegetables and blend them into a colorful mix
 
 
+## Preview
+
+[![Sample screenshot](/sample-1.jpg)](https://michaelcurrin.github.io/food-blender-site/)
+
+
 ## Play online
 
-https://michaelcurrin.github.io/food-blender-site/
+- https://michaelcurrin.github.io/food-blender-site/
 
 
 ## Features
@@ -40,15 +45,12 @@ If you like this project please checkout this AntiStress mobile app which I foun
 4. Open in the browser:
     - http://127.0.0.1:4000/food-blender-site/
 
-### Github Pages
+### GitHub Pages
 
-Fork the project.
-
-Go to the repo's settings.
-
-Setup the Github Pages section using `master` branch.
-
-Click on the URL which pages under Github Pages section.
+1. Fork the project.
+2. Go to the repo's settings.
+3. Setup the Github Pages section using `master` branch.
+4. Click on the URL which pages under GitHub Pages section.
 
 
 ## Development
