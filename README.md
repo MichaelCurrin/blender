@@ -4,12 +4,17 @@
 
 ## Preview
 
-[![Sample screenshot](/sample-1.jpg)](https://michaelcurrin.github.io/food-blender-site/)
+<div align="center">
+    <a href="https://michaelcurrin.github.io/food-blender-site/">
+        <img src="/sample-1.jpg" alt="Sample screenshot" title="Sample screenshot" width="400" />
+    </a>
+</div>
 
+<div align="center">
 
-## Play online
+[![Play online](https://img.shields.io/badge/Play_online-green)](_https://michaelcurrin.github.io/food-blender-site/)
 
-- https://michaelcurrin.github.io/food-blender-site/
+</div>
 
 
 ## Features
