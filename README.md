@@ -37,17 +37,18 @@ If you like this project please checkout this AntiStress mobile app which I foun
 
 ### Locally
 
-1. Install Ruby and [Jekyll](https://jekyllrb.com/).
-2. Clone the repo.
+1. Install Ruby.
+1. Install [Jekyll](https://jekyllrb.com/) globally.
+1. Clone the repo.
     ```bash
     $ git clone github.com:MichaelCurrin/food-blender-site.git
     $ cd food-blender-site
     ```
-3. Start the Jekyll server (with live-reload enabled).
+1. Start the Jekyll dev server (this has live-reload enabled).
     ```bash
     $ make serve
     ```
-4. Open in the browser:
+1. Open in the browser:
     - http://127.0.0.1:4000/food-blender-site/
 
 ### GitHub Pages
