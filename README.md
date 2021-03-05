@@ -10,9 +10,11 @@
     </a>
 </div>
 
+<br>
+
 <div align="center">
 
-[![Play online](https://img.shields.io/badge/Play_online-green)](_https://michaelcurrin.github.io/food-blender-site/)
+[![Play online](https://img.shields.io/badge/Play_online_🎮-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/food-blender-site/)
 
 </div>
 
