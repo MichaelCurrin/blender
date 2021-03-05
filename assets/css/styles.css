@@ -3,64 +3,64 @@
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    text-align: center;
+  height: 100%;
+  margin: 0;
+  text-align: center;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    background: yellowgreen;
-    margin-bottom: 20px;
+  background: yellowgreen;
+  margin-bottom: 20px;
 }
 
 button {
-    background: yellowgreen;
-    color: white;
-    padding: 5px 10px 5px 10px;
-    font-size: large;
+  background: yellowgreen;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  font-size: large;
 }
 
 #result {
-    margin: 0 auto;
-    position: relative;
+  margin: 0 auto;
+  position: relative;
 }
 
 footer {
-    background: yellowgreen;
-    margin-top: auto;
-    min-height: 20px;
-    padding: 10px;
+  background: yellowgreen;
+  margin-top: auto;
+  min-height: 20px;
+  padding: 10px;
 }
 
 /** Images **/
 
 .splat {
-    width: 200px;
-    margin-left: -100px;
+  width: 200px;
+  margin-left: -100px;
 }
 
 .under {
-    position: absolute;
-    z-index: -1;
+  position: absolute;
+  z-index: -1;
 }
 
 .over {
-    position: absolute;
-    z-index: 1;
-    /* Mix the colors. Note in Safari that luminosity value keep the element greyscale unfortunately. */
-    mix-blend-mode: luminosity;
+  position: absolute;
+  z-index: 1;
+  /* Mix the colors. Note in Safari that luminosity value keep the element greyscale unfortunately. */
+  mix-blend-mode: luminosity;
 }
 
 #critterSvg {
-    position: absolute;
-    height: 80px;
-    top: 60px;
-    margin-left: -35px;
-    z-index: 2;
+  position: absolute;
+  height: 80px;
+  top: 60px;
+  margin-left: -35px;
+  z-index: 2;
 }
