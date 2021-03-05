@@ -1,6 +1,9 @@
 # Food Blender
 > Choose fruit and vegetables and blend them into a colorful mix
 
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/food-blender-site?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/food-blender-site/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+
 
 ## Preview
 
@@ -17,6 +20,13 @@
 [![Play online](https://img.shields.io/badge/Play_online_🎮-2ea44f?style=for-the-badge)](https://michaelcurrin.github.io/food-blender-site/)
 
 </div>
+
+
+## About
+
+A simple online game/toy. 
+
+Made with Jekyll and bit of CSS and vanilla JS.
 
 
 ## Features
@@ -85,6 +95,6 @@ SVG images are sourced from [svgsilh.com](https://svgsilh.com) and used freely u
 
 ## License
 
-Released under [MIT](/LICENSE).
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
 
 Please link back to this repo if you use part of the content or idea here and you must include a copy of this license if you use a significant portion of code.
