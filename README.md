@@ -45,11 +45,9 @@ If you like this project please checkout this AntiStress mobile app which I foun
 - https://www.jindoblu.com/antistress-relaxation-toys/
 
 
-## Setup and run
+## Setup and run locally
 
-### Locally
-
-1. Install Ruby.
+1. Install Ruby - see [instructions](https://gist.github.com/MichaelCurrin/fb758aea4d35e03b9ed093afddf4e7ec)
 1. Install [Jekyll](https://jekyllrb.com/) globally.
 1. Clone the repo.
     ```bash
@@ -63,7 +61,9 @@ If you like this project please checkout this AntiStress mobile app which I foun
 1. Open in the browser:
     - http://127.0.0.1:4000/food-blender-site/
 
-### GitHub Pages
+
+## Deploy
+> Remote setup on GitHub Pages
 
 1. Fork the project.
 2. Go to the repo's settings.
