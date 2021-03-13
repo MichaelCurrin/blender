@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ site.title }}</title>
 
-    <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/styles.css %}">
 
-    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+    <script src="{{ site.baseurl }}{% link assets/js/main.js %}"></script>
 
     {% include critters.html %}
 </head>
@@ -22,8 +22,8 @@
     </header>
 
     <section>
-
         <h2>Ingredients</h2>
+
         <div>
             <span>
                 <select id=foodInput1>
@@ -58,7 +58,7 @@
     </section>
 
     <footer>
-        <!-- Developer note: The corner banner was added on the site but it causes issues when the SVGs change. -->
+        <!-- Developer note: The corner banner was added on the site before instead of this, but it causes issues when the SVGs change. -->
         <a href="https://github.com/{{ site.github_repo }}">
             <img src="https://img.shields.io/github/forks/MichaelCurrin/food-blender-site?style=social">
         </a>
