@@ -48,7 +48,11 @@ If you like this project please checkout this AntiStress mobile app which I foun
 ## Setup and run locally
 
 1. Install Ruby - see [instructions](https://gist.github.com/MichaelCurrin/fb758aea4d35e03b9ed093afddf4e7ec)
-1. Install [Jekyll](https://jekyllrb.com/) globally.
+1. Install Bundler.
+1. Install gems.
+    ```sh
+    $ make install
+    ```
 1. Clone the repo.
     ```bash
     $ git clone github.com:MichaelCurrin/food-blender-site.git
