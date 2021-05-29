@@ -25,8 +25,9 @@
         <h2>Ingredients</h2>
 
         <div>
-            <span>
+            <span onchange="blend()">
                 <select id=foodInput1>
+                    <option value="">--</option>
                 </select>
 
                 <select id=foodInput2>
@@ -37,8 +38,9 @@
             <br>
             <br>
 
-            <button id='foodButton' onclick="blend()">Blend!</button>
-            <button id="critterButton" onclick="protein()">Protein!</button>
+            <button id="critterButton" onclick="protein()">
+                Protein!
+            </button>
         </div>
 
         <br>
