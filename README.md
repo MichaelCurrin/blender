@@ -4,6 +4,8 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/food-blender-site?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/food-blender-site/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
+[![Made with Jekyll](https://img.shields.io/badge/Jekyll-3.9-blue?logo=jekyll&logoColor=white)](https://jekyllrb.com)
+
 
 ## Preview
 
@@ -24,7 +26,7 @@
 
 ## About
 
-A simple online game/toy. 
+A simple online game/toy.
 
 Made with Jekyll and bit of CSS and vanilla JS.
 
