@@ -1,10 +1,24 @@
+### Site metadata ###
+
 title: Food Blender
 description: Choose fruit and vegetables and blend them into a colorful mix
 
-baseurl: /food-blender-site
 github_repo: MichaelCurrin/food-blender-site
 
+### Build settings ###
+
+url: https://michaelcurrin.github.io
+baseurl: /food-blender-site
+
 exclude:
+  - vendor/
+  - Gemfile
   - LICENSE
-  - README.md
   - Makefile
+  - README.md
+  - sample*.png
+
+liquid:
+  error_mode: strict
+
+strict_front_matter: true
