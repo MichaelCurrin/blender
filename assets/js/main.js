@@ -105,12 +105,8 @@ function protein() {
   let url = randomChoice(CRITTER_URLS);
 
   let critterSvg = document.getElementById("critterSvg");
-  let svgData = critterSvg.getAttribute("data");
 
-  // Unfortunately it cannot be set to different fill here as it takes too long for the SVG to
-  // load once data is set. So keep it black.
-  let newData = svgData === EMPTY_SVG_PATH ? url : EMPTY_SVG_PATH;
-  critterSvg.setAttribute("data", newData);
+  critterSvg.setAttribute("data", url);
 }
 
 function initialize() {
